@@ -1,0 +1,33 @@
+.about-backgraund
+  = form_with url: "/posts/create" do |form| 
+    .title
+        = form.label :title, "タイトル"
+        = form.text_field :title
+    .time
+        = form.label :start_time
+        = form.datetime_select :start_time
+    .content
+       = form.label :content, "日記"
+       = form.text_field :content
+    .submit
+        = form.submit "送信"
+
+/= form_tag("/posts/create") do
+ /   .wright-area
+  /      input name="start_time" type="date"
+   /     br
+    /    input name="title" value="タイトル"
+     /   textarea name="content" 日記を書いてください
+      /  br
+       / .place
+        /    input type="submit" value="保存"
+         /   =link_to "戻る", "/posts/index"
+
+
+
+
+
+
+
+
+

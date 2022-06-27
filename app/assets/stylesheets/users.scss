@@ -1,0 +1,78 @@
+// index
+.user-square-base {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: #f5deb3;
+    margin-top: 5%;
+    margin-left: 10%;
+  
+    .user-square {
+    //   width: 80%;
+    //   height: 50px;
+    //   background: #ffffe0;
+    //   position: absolute;
+    //   margin-top: 10%;
+    //   margin-left: 10%;
+    //   font-size: 25px;
+    line-height: 80%;
+    }
+    
+    .img-size {
+        float: left;
+        margin-right: 3%;
+    }
+
+    .name-size {
+        font-size: 25px;
+        // margin-top: 10%;
+        // vertical-align:text-bottom;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+  }
+  
+// new login
+.enter{
+    margin-top        : 10%;
+    p {
+        line-height   : 0%;
+        width: 105%;
+    }
+    
+    input {
+        margin-left   : 35%;
+        margin-bottom : 10%;
+        width         : 35%;
+    }
+
+    .register {
+        margin-left   : 40%;
+    }
+}
+
+// show
+.user_image {
+    position: absolute;
+    margin-left: 50%;
+    .name-title {
+        text-align: center;
+    }
+
+    .name {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .show-button {
+        text-align: right;
+    }
+
+    .show-button2 {
+        // float: right;
+    }
+}
+

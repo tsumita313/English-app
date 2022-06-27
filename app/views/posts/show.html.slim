@@ -1,0 +1,19 @@
+.about-backgraund
+  .name-place
+    =@user.name
+  .wright-area-show
+    .box
+        = @post.content
+    .box2
+        = @post.translation
+    = form_tag("/posts/#{@post.id}/create_comment") do
+        textarea name="comment" =@post.comment
+        .btn
+            input type="submit" value="コメント保存"
+    .place-show
+      = if @post.user_id == @current_user.id 
+      =link_to("編集", "/posts/#{@post.id}/edit")
+      = form_tag("/posts/#{@post.id}/destroy") do
+      input type="submit" value="削除"
+      = form_tag("/posts/#{@post.id}/translation") do
+      input name ="translation" type="submit" value="翻訳"

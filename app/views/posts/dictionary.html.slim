@@ -1,0 +1,9 @@
+.about-backgraund
+    .wright-area-show
+        .box
+            
+        .box2
+    
+        .place-show
+            = form_tag("/posts/#{@post.id}/translation") do
+                input name ="translation" type="submit" value="翻訳"

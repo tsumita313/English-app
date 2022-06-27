@@ -1,0 +1,16 @@
+.about-backgraund
+    .user-square-base
+        .user-square
+            - @users.each do |user|
+                .img-size
+                        img src="/user_images/#{user.image_name}"
+                .name-size
+                        = link_to(user.name, "/users/#{user.id}")
+                
+                
+                br
+                br
+                br
+                br
+                br
+                

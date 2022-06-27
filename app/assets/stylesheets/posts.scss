@@ -1,0 +1,122 @@
+// new
+.wright-area {
+        // background-color: blueviolet;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 5%;
+        width:100%;
+    
+        textarea {
+            resize: none;
+            width:90%;
+            height:200px;
+            // padding-right: 1.5em;
+            // padding-left: 1.5em;
+            line-height: 2.5em;
+            background-image: linear-gradient(transparent 0, transparent 97%, #ddd 100%);
+            background-size: 100% 2.5em;
+          } 
+}
+
+.place {
+  float: right;
+  margin-right: 10%;
+}
+
+// index
+.square-base {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: #f5deb3;
+  margin-top: 5%;
+  margin-left: 10%;
+
+  .square {
+    width: 80%;
+    height: 50px;
+    background: #ffffe0;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+}
+
+// show
+.name-place {
+  font-size: 20px;
+  margin-left:  5%;
+}
+
+.wright-area-show {
+  // background-color: blueviolet;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 5%;
+  width:100%;
+
+  .box {
+      position: absolute;
+      width:90%;
+      height:20%;
+      background: linear-gradient(#ccc 1px, transparent 1px) #ffffff;
+      background-size: auto 2.0em;
+      line-height: 2.5em;
+      border-bottom: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      overflow: hidden;
+      z-index: 1;
+  }
+
+  .box2 {
+    position: absolute;
+    width:90%;
+    height:20%;
+    background: linear-gradient(#ccc 1px, transparent 1px) #ffffff;
+    background-size: auto 2.0em;
+    line-height: 2.5em;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+    z-index: 2;
+    margin-top: 11%;
+}
+
+  textarea {
+      resize: none;
+      width:90%;
+      height:200px;
+      line-height: 2.5em;
+      background-image: linear-gradient(transparent 0, transparent 97%, #ddd 100%);
+      background-size: 100% 2.5em;
+      margin-top: 22%;
+    } 
+
+    .btn {
+      display: flex;
+      justify-content: right;
+      margin-right: 10%;
+    }
+
+  .comment-save {
+    position: absolute;
+    margin-bottom: 90px;
+    margin-left: 5%;
+  }
+
+  .place-show {
+    display: flex;
+    justify-content: right;
+    margin-right: 10%;
+  }
+
+}
+
+// edit
+.place-edit {
+  display: flex;
+  justify-content: right;
+  margin-right: 10%;
+}

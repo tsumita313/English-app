@@ -1,0 +1,14 @@
+.about-backgraund
+  = form_tag("/users/#{@user.id}/update", {multipart: true})
+    .enter
+      p ユーザー名
+      input type="text" size ="50" name="name" value= @user.name
+      p メールアドレス 
+      input type="text" size ="50" name="email" value= @user.email
+      p パスワード
+      input type="text" size ="50" name="password" value= @user.password
+      p 画像 
+      input name="image" type="file"
+      .register
+        input type="submit" value="保存"
+        =link_to("戻る","/users/#{@user.id}")

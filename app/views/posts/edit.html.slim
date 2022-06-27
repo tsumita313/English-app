@@ -1,0 +1,9 @@
+.about-backgraund
+= form_tag("/posts/#{@post.id}/update") do
+    .wright-area
+        textarea name="content" =@post.content
+        textarea =@post.translation
+        .place-edit
+            input type="submit" value="保存"
+            = link_to("戻る", "/posts/#{@post.id}")
+

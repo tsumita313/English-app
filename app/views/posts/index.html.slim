@@ -1,0 +1,31 @@
+.about-backgraund
+    .square-base
+        = link_to '日記追加', "/posts/new"
+        = month_calendar(posts: @posts) do |date, posts|
+            = date.day
+            - posts.each do |post|
+                = post.title
+        / .square
+        / - @posts.each do |post|
+            / = link_to(post.content, "/posts/#{post.id}")
+            / br
+
+
+
+/month_calendar(events: @meetings) do |date, meetings|
+/= date
+
+/meetings.each do |meeting|
+/= meeting.name
+
+/= month_calendar(events: @posts) do |date, posts|
+/= date
+
+/posts.each do |post|
+/= post.name
+
+/@posts コントローラーで取得したPost.all
+
+/posts 日付毎のpostsをまとめたやつ
+
+/post レコード単体

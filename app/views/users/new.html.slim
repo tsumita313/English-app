@@ -1,0 +1,13 @@
+.about-backgraund
+  = form_tag("/users/create") do
+    .enter
+        p ユーザー名
+        input type="text" size ="30" name="name" =@user.name
+        p メールアドレス
+        input type="text" size ="30" name="email" = @user.email
+        p パスワード
+        input type="password" size ="30" name="password" =@user.password
+
+        .register
+            input type="submit" value="新規登録" 
+            

@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title
+      | EnglishApp1
+    meta[name="viewport" content="width=device-width,initial-scale=1"]
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag "application", "data-turbo-track": "reload"
+    = javascript_importmap_tags
+
+  body
+  header
+    .header-logo
+      - if @current_user
+        = link_to("top", "/posts/index")
+      - else
+        = link_to("top", "/")
+    .header-menus
+      - if @current_user
+        ul type="none"
+            li = link_to(@current_user.name, "/users/#{@current_user.id}")
+            li = link_to("日記カレンダー", "/posts/index")
+            li = link_to("日記作成", "/posts/new")
+            li = link_to("ユーザー一覧", "/users/index")
+            li = link_to("辞書", "/dictionary/top")
+            li = button_to("ログアウト", "/logout", {method: "post"})
+      - else
+        ul type="none"
+            li = link_to("英語日記について", "/about")
+            li = link_to("新規登録", "/signup")
+            li = link_to("ログイン", "/login")
+    
+      - if flash[:notice]
+        .flash
+          = flash[:notice] 
+
+    = yield

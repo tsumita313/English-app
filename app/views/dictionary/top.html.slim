@@ -1,0 +1,11 @@
+.about-backgraund
+
+= form_tag("/dictionary/create") do
+    .wright-area
+        textarea name="content" =@dictionary.content
+        textarea =@dictionary.translation 
+                / ↑何かデータ入れとかないとnilエラーになる
+        br
+        .place
+            input type="submit" value="翻訳"
+
